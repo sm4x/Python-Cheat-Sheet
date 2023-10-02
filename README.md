@@ -1,5 +1,17 @@
 # Python-Cheat-Sheet
 
+
+| Operator  |   |   |   |
+|:---|:---|---|---|
+|+|Addition|   |   |
+|-|Subtraction|   |   |
+|*|Multiplication|   |   |
+|/|Division|   |   |
+|//|Integer Division|   |   |
+|%|Modulus   |   |   |
+
+
+
 # Command Line Arguments
 ```{python}
 import sys
