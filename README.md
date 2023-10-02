@@ -27,6 +27,10 @@ comment
 ```{python}
 import re
 ```
+### Regular Expression object
+```{python}
+re_object = re.compile(r'{regular expression})
+```
 
 ## Command Line Arguments
 ```{python}
