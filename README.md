@@ -1,5 +1,12 @@
 # Python-Cheat-Sheet
-Python Cheat Sheet
+
+# Command Line Arguments
+```{python}
+import sys
+print(sys.argv)
+```
+
+
 
 ## Virtual Environments
 ### Create Virtual Environment
