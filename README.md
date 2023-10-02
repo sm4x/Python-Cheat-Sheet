@@ -6,8 +6,6 @@ import sys
 print(sys.argv)
 ```
 
-
-
 ## Virtual Environments
 ### Create Virtual Environment
 ```{bash}
