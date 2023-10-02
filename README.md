@@ -1,6 +1,18 @@
 # Python-Cheat-Sheet
+## Comments
 
-
+### Single line comment
+```{python}
+# This is a comment
+```
+### Multi-line comment
+```{python}
+'''
+This is
+a multi-line
+comment
+'''
+```
 | Operator  |   |   |   |
 |:---|:---|---|---|
 |+|Addition|   |   |
