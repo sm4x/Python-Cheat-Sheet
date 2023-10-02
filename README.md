@@ -10,9 +10,13 @@
 |//|Integer Division|   |   |
 |%|Modulus   |   |   |
 
+## Regular expressions
+### Import module
+```{python}
+import re
+```
 
-
-# Command Line Arguments
+## Command Line Arguments
 ```{python}
 import sys
 print(sys.argv)
