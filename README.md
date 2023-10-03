@@ -124,16 +124,29 @@ mo.group()                    # returns the match object's matched string
 
 **Note:** A, L, and U are mutually exclusive.  If you want to pass multiple arguments (`re.DOTALL` , `re.IGNORECASE`, `re.VERBOSE`), combine them with the `|` bitwise operator.
 
-
-
-
-
-
 ```{python}
 re_object = re.compile(r'First Name: (.*) Last Name: (.*)')
 re_object.findall('First Name: John Last Name: Doe')
 [('John'),('Doe')]
 ```
+## Files
+
+* Files have a name and a path.
+* The root folder is the lowest folder.
+* In a file path, the folders and filename are separated by backslashes on Windows and forward slashes on Linux and Mac.
+* Use the `os.path.join()` function to combine folders with the correct slash.
+* The current working directory is the folder that any relative paths are relative to.
+* `os.getcwd()` will return the current working directory.
+* `os.chdir()` will change the current working directory.
+* Absolute paths begin with the root folder, relative paths do not.
+* The `.` folder represents "this folder", the `..` folder represents "the parent folder".
+* `os.path.abspath() returns an absolute path form of the path passed to it.
+* `os.path.relpath() returns the relative path between two paths passed to it.
+* `os.makedirs()` can make folders.
+* `os.path.getsize()` returns a file's size.
+* `os.listdir()` returns a list of strings of filenames.
+* `os.path.exists()` returns True if the filename passed to it exists.
+* `os.path.isfile()` and `os.path.isdir()` return True if they were passed a filename or file path.
 
 ## Command Line Arguments
 ```{python}
