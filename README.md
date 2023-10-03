@@ -22,6 +22,15 @@ comment
 |//|Integer Division|   |   |
 |%|Modulus   |   |   |
 
+### Comparison Operators
+| Operator  | Functionality|
+|:---|:---|
+|==|Equal to|
+|!=|Not equal to|
+|<|Less than|
+|>|Greater than|
+|<=|Less than or equalto|
+|>=|Greater than or qual to|
 ## Regular expressions
 ### Import module
 ```{python}
@@ -31,6 +40,13 @@ import re
 ```{python}
 re_object = re.compile(r'{regular expression})
 ```
+#### Regular expression 
+```{python}
+re_object.search({text}) # returns match object
+re_object.findall({text})     # returns list
+
+```
+
 
 ## Command Line Arguments
 ```{python}
