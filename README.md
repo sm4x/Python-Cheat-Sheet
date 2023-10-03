@@ -1,4 +1,23 @@
 # Python-Cheat-Sheet
+## Data Types
+### Base types
+
+* integer
+* float
+* boolean
+* string 
+* bytes
+
+### Container Types
+
+| Data Type  |  Ordered |  Mutability  |
+|:-----------|---|---|
+| list|||
+|tuple|||
+|str bytes|||
+|dict|||
+|set|||
+|frozenset|||
 ## Comments
 
 ### Single line comment
@@ -42,7 +61,7 @@ re_object = re.compile(r'{regular expression})
 ```
 #### Regular expression 
 ```{python}
-re_object.search({text}) # returns match object
+re_object.search({text})      # returns match object
 re_object.findall({text})     # returns list
 
 ```
