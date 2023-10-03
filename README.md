@@ -69,6 +69,12 @@ mo.group()                    # returns the match object's matched string
 
 |Operator||
 |:---|:---|
+|\d|numeric digits [0..9]|
+|\D|NOT (numeric digits [0..9])|
+|\w|letter,numeric digits [0..9], _|
+|\W|NOT (letter,numeric digits [0..9], _)|
+|\s|space, tab, newline|
+|\S|NOT (space, tab, newline)|
 |?| 0 or 1 times|
 |*| 0 or more times|
 |+| 1 or more times|
