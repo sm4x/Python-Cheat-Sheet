@@ -67,7 +67,7 @@ mo.group()                    # returns the match object's matched string
 ```
 ### Pattern matching
 
-|Operator
+|Operator||
 |:---|:---|
 |?| 0 or 1 times|
 |*| 0 or more times|
