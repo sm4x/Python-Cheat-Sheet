@@ -65,8 +65,12 @@ re_object.search({text})      # returns match object
 re_object.findall({text})     # returns list
 mo.group()                    # returns the match object's matched string
 ```
+### Pattern matching
 
-
+|Operator
+|:---|:---|
+|?| 0 or 1 times|
+|*| 0 or more times|
 ## Command Line Arguments
 ```{python}
 import sys
