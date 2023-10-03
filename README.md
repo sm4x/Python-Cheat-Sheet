@@ -63,7 +63,7 @@ re_object = re.compile(r'{regular expression}) # usually raw strings because of 
 ```{python}
 re_object.search({text})      # returns match object
 re_object.findall({text})     # returns list
-
+mo.group()                    # returns the match object's matched string
 ```
 
 
