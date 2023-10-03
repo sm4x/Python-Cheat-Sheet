@@ -88,6 +88,13 @@ mo.group()                    # returns the match object's matched string
 |Pattern$|String must end with Pattern|
 |^Pattern$|Entire String must match Pattern|
 |.|wildcard - any character except newlines|
+|.*|match everything except newline|
+
+```{python}
+re_object = re.compile(r'First Name: (.*) Last Name: (.*)')
+re_object.findall('First Name: John Last Name: Doe')
+[('John'),('Doe')]
+```
 
 ## Command Line Arguments
 ```{python}
