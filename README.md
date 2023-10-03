@@ -72,6 +72,11 @@ mo.group()                    # returns the match object's matched string
 |?| 0 or 1 times|
 |*| 0 or more times|
 |+| 1 or more times|
+|{x}| x number of times|
+|{x,y}|min x and max y number of times|
+|{x,y}?| nongreedy match|
+
+
 ## Command Line Arguments
 ```{python}
 import sys
