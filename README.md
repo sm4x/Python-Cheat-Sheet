@@ -81,6 +81,7 @@ mo.group()                    # returns the match object's matched string
 |{x}| x number of times|
 |{x,y}|min x and max y number of times|
 |{x,y}?| nongreedy match|
+|[a-zA-Z]|Character classes a..z and A..Z|
 
 
 ## Command Line Arguments
