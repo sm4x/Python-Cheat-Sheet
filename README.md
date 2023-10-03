@@ -57,7 +57,7 @@ import re
 ```
 ### Regular Expression object
 ```{python}
-re_object = re.compile(r'{regular expression})
+re_object = re.compile(r'{regular expression}) # usually raw strings because of frequent backslash (\) use
 ```
 #### Regular expression 
 ```{python}
