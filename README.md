@@ -83,7 +83,11 @@ mo.group()                    # returns the match object's matched string
 |{x,y}?| nongreedy match|
 |[a-zA-Z]|Character classes a..z and A..Z|
 |^[a-zA-Z]| NOT (a..z and A..Z)|
-
+|:---|:---|
+|^Pattern|String must start with Pattern|
+|Pattern$|String must end with Pattern|
+|^Pattern$|Entire String must match Pattern|
+|.|wildcard - any character except newlines|
 
 ## Command Line Arguments
 ```{python}
