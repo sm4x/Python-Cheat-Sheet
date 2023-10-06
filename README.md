@@ -148,6 +148,13 @@ elif {another_condition}:
 else:
   yet_another_expression
 ```
+## Lists
+### List Comprehension
+The condition is optional.
+```{python}
+newlist = [expression for item in iterable if condition == True]
+newlist = [x for x in iterable] 
+```
 
 ## Files
 
