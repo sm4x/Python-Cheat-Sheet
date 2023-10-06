@@ -129,6 +129,17 @@ re_object = re.compile(r'First Name: (.*) Last Name: (.*)')
 re_object.findall('First Name: John Last Name: Doe')
 [('John'),('Doe')]
 ```
+## Control Flow
+
+```{python}
+if {condition}:
+  expression
+elif {another_condition}:
+  another_expression
+else:
+  yet_another_expression
+```
+
 ## Files
 
 * Files have a name and a path.
