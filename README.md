@@ -50,6 +50,15 @@ comment
 |>|Greater than|
 |<=|Less than or equalto|
 |>=|Greater than or qual to|
+
+### Logical Operators
+| Operator  | Functionality|
+|:---|:---|
+|and|Logical And|
+|or|Logical Or|
+|not|Logical Not|
+
+
 ## Regular expressions
 ### Import module
 ```{python}
