@@ -189,6 +189,16 @@ print(sys.argv)
 * The five log levels are: `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`.
 * You can also log to a file instead of the screen with the filename keyword argument in the `logging.basicConfig()` function.
 
+## Modules
+
+
+```{python}
+import module                 
+from module import keyword
+from module import *        # import everyting from module 
+import modules as m         # alias import
+``````
+
 ## Virtual Environments
 ### Create Virtual Environment
 ```{bash}
