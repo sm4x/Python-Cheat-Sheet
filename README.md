@@ -58,6 +58,31 @@ comment
 |or|Logical Or|
 |not|Logical Not|
 
+## Object Oriented Programming
+### Classes
+
+```{python}
+class ClassName
+    variable = value               # class variable shared by all instances
+
+    list_variable = []             # mistaken use of a class variable
+
+def __init__(self, name) -> None:  # Instantiation operation
+    self.name = name               # instance variable unique to each instance
+```
+### Inheritance
+```{python}
+class DerivedClassName(modname.BaseClassName): # base class defined in 
+                                               # another module
+```
+#### Superclass-call
+
+```{python}
+class C(B):
+    def method(self, arg):
+        super().method(arg)    # This does the same thing as:
+                               # super(C, self).method(arg)
+```
 
 ## Regular expressions
 ### Import module
