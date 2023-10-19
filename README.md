@@ -110,9 +110,9 @@ mo.group()                    # returns the match object's matched string
 |`"*"`| Matches 0 or more (greedy) repetitions of the preceding RE. Greedy means that it will match as many repetitions as possible.|
 |`"+"`| Matches 1 or more (greedy) repetitions of the preceding RE.|
 |`"?"`| Matches 0 or 1 (greedy) of the preceding RE.|
-|`*?`,+?`,`??`| Non-greedy versions of the previous three special characters.|
+|`*?`,`+?`,`??`| Non-greedy versions of the previous three special characters.|
 |`{m,n}`| Matches from m to n repetitions of the preceding RE.|
-|`{m,n}?`| Non-greedy version of the above.|
+| `{m,n}?` | Non-greedy version of the above.|
 |`"\\"`| Either escapes special characters or signals a special sequence.|
 |`[]`| Indicates a set of characters. A "^" as the first character indicates a complementing set. (NOT)|
 |`"\|"`| A\|B, creates an RE that will match either A or B. Multiple Instances possible.|
@@ -183,6 +183,62 @@ newlist = [x for x in iterable]
 
 ## Files
 
+### Open files
+
+```{python}
+open (file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+```
+
+**file**
+: path-like object (representing a file system path)
+
+**mode** (optional)
+: mode while opening a file. If not provided, it defaults to 'r' (open for reading in text mode). Available file modes are: 
+
+| Mode | Description|
+|----|----|
+|`'r'`|Open a file for reading. (default)|
+|`'w'`|Open a file for writing. Creates a new file if it does not exist or truncates the file if it exists.|
+|`'x'`|Open a file for exclusive creation. If the file already exists, the operation fails.|
+|`'a'`|Open for appending at the end of the file without truncating it. Creates a new file if it does not exist.|
+|`'t'`|Open in text mode. (default)|
+|`'+'`|Open a file for updating (reading and writing)|
+
+**buffering** (optional)
+: used for setting buffering policy
+
+**encoding** (optional)
+: the encoding format
+
+**errors** (optional)
+: string specifying how to handle encoding/decoding errors
+
+**newline** (optional)
+: how newlines mode works (available values: None, `' '`, `'\n'`, `'r'`, and `'\r\n'`
+
+**closefd** (optional) 
+: must be True (default); if given otherwise, an exception will be raised
+
+**opener** (optional) 
+: a custom opener; must return an open file descriptor
+
+### Closing files
+
+```{python}
+file.close()
+```
+
+
+### With method
+Closes File after use.
+```{python}
+with open("myfile.txt") as file:
+    contents = file.read()
+    print(content)
+```
+
+
+
 * Files have a name and a path.
 * The root folder is the lowest folder.
 * In a file path, the folders and filename are separated by backslashes on Windows and forward slashes on Linux and Mac.
@@ -199,6 +255,8 @@ newlist = [x for x in iterable]
 * `os.listdir()` returns a list of strings of filenames.
 * `os.path.exists()` returns True if the filename passed to it exists.
 * `os.path.isfile()` and `os.path.isdir()` return True if they were passed a filename or file path.
+
+
 
 ## Command Line Arguments
 ```{python}
