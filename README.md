@@ -16,8 +16,8 @@
 |tuple|ordered|immutable|
 |str bytes|ordered|immutable|
 |dict|ordered|mutable|
-|set|unordered||
-|frozenset||immutable|
+|set|unordered|(mutable)|
+|frozenset|unordered|immutable|
 
 
 
