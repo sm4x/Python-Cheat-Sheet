@@ -12,12 +12,15 @@
 
 | Data Type  |  Ordered |  Mutability  |
 |:-----------|---|---|
-| list|||
-|tuple|||
-|str bytes|||
-|dict|||
-|set|||
-|frozenset|||
+| list|ordered|mutable|
+|tuple|ordered|immutable|
+|str bytes|ordered|immutable|
+|dict|ordered|mutable|
+|set|unordered||
+|frozenset||immutable|
+
+
+
 ## Comments
 
 ### Single line comment
