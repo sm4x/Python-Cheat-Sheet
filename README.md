@@ -72,7 +72,7 @@ def __init__(self, name) -> None:  # Instantiation operation
 ```
 ### Inheritance
 ```{python}
-class DerivedClassName(modname.BaseClassName): # base class defined in 
+class DerivedClassName(modname.BaseClassName): # base class defined in
                                                # another module
 ```
 #### Superclass-call
@@ -164,7 +164,7 @@ re_object.findall('First Name: John Last Name: Doe')
 [('John'),('Doe')]
 ```
 ## Control Flow
-
+### `if`, `elif`, `else` - statements
 ```{python}
 if {condition}:
   expression
@@ -173,12 +173,53 @@ elif {another_condition}:
 else:
   yet_another_expression
 ```
+
+### `while` - loops
+```{python}
+while condition:
+    statement
+```
+
+### `for` - statements
+```{python}
+for user, status in users.copy().items():
+    if status == 'inactive':
+        del users[user]
+```
+
+### `break`
+
+The `break` statement breaks out of the innermost enclosing `for` or `while` loop.
+
+### `pass`
+
+The `pass` statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
+
+### `match` - statement
+```{python}
+match status:
+        case 400:
+            return "Bad request"
+        case 404:
+            return "Not found"
+        case 418:
+            return "I'm a teapot"
+        case _:
+            return "Something's wrong with the internet"
+```
+
 ## Lists
 ### List Comprehension
 The condition is optional.
 ```{python}
-newlist = [expression for item in iterable if condition == True]
-newlist = [x for x in iterable] 
+newlist = [ expression for item in iterable if condition ]
+newlist = [ x for x in iterable ] 
+```
+
+### Dictionary Comprehension
+The condition is optional.
+```{python}
+newdict = { new_key: new_value for (key, value) in dict.items() if condition }
 ```
 
 ## Files
