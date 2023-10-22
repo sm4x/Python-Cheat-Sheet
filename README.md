@@ -12,12 +12,12 @@
 
 | Data Type  | Ordered | Mutability | Example|
 |:-----------|---------|------------|--------|
-|list|ordered|mutable| `[1, 2, 3]`|
+|list |ordered|mutable| `[1, 2, 3]`|
 |tuple|ordered|immutable| `(1, 2)`|
 |str bytes|ordered|immutable|`b"This is a string"`|
 |dict|ordered|mutable| `{"a": 1, "b": 2, "c":3 }`|
-|set|unordered|(mutable)| {"a", "b", "c"}|
-|frozenset|unordered|immutable||
+|set|unordered|(mutable)| `{"a", "b", "c"}`|
+|frozenset|unordered|immutable|`frozenset(["a", "b", "c"])`|
 
 
 
@@ -38,37 +38,37 @@ comment
 
 ## Operators
 
-| Operator  |   |   |   |
-|:---|:---|---|---|
-|+|Addition|   |   |
-|-|Subtraction|   |   |
-|*|Multiplication|   |   |
-|/|Division|   |   |
-|//|Integer Division|   |   |
-|%|Modulus   |   |   |
+| Operator  |   | 
+|:----------|:--|
+|`+`|Addition| 
+|`-`|Subtraction|   
+|`*`|Multiplication|   
+|`/`|Division|  
+|`//`|Integer Division|  
+|`%`|Modulus   |  
 
 ### Comparison Operators
 | Operator  | Functionality|
-|:---|:---|
-|==|Equal to|
-|!=|Not equal to|
-|<|Less than|
-|>|Greater than|
-|<=|Less than or equalto|
-|>=|Greater than or qual to|
+|:----------|:-------------|
+|`==`|Equal to|
+|`!=`|Not equal to|
+|`<`|Less than|
+|`>`|Greater than|
+|`<=`|Less than or equalto|
+|`>=`|Greater than or qual to|
 
 ### Logical Operators
 | Operator  | Functionality|
-|:---|:---|
-|and|Logical And|
-|or|Logical Or|
-|not|Logical Not|
+|:----------|:-------------|
+|`and`|Logical And|
+|`or`|Logical Or|
+|`not`|Logical Not|
 
 ### Bitwise Operations
 
 | Operation | Result |
 |:----------|:-------|
-|`x y`| bitwise or of `x` and `y` |
+|`x \| y`| bitwise or of `x` and `y` |
 |`x ^ y`|bitwise exclusive or of x and y |
 |`x & y`|bitwise and of x and y |
 |`x << n`|x shifted left by n bits |
