@@ -10,14 +10,14 @@
 
 ### Container Types
 
-| Data Type  |  Ordered |  Mutability  |
-|:-----------|---|---|
-| list|ordered|mutable|
-|tuple|ordered|immutable|
-|str bytes|ordered|immutable|
-|dict|ordered|mutable|
-|set|unordered|(mutable)|
-|frozenset|unordered|immutable|
+| Data Type  | Ordered | Mutability | Example|
+|:-----------|---------|------------|--------|
+|list|ordered|mutable| `[1, 2, 3]`|
+|tuple|ordered|immutable| `(1, 2)`|
+|str bytes|ordered|immutable|`b"This is a string"`|
+|dict|ordered|mutable| `{"a": 1, "b": 2, "c":3 }`|
+|set|unordered|(mutable)| {"a", "b", "c"}|
+|frozenset|unordered|immutable||
 
 
 
@@ -35,6 +35,9 @@ a multi-line
 comment
 '''
 ```
+
+## Operators
+
 | Operator  |   |   |   |
 |:---|:---|---|---|
 |+|Addition|   |   |
@@ -60,6 +63,18 @@ comment
 |and|Logical And|
 |or|Logical Or|
 |not|Logical Not|
+
+### Bitwise Operations
+
+| Operation | Result |
+|:----------|:-------|
+|`x y`| bitwise or of `x` and `y` |
+|`x ^ y`|bitwise exclusive or of x and y |
+|`x & y`|bitwise and of x and y |
+|`x << n`|x shifted left by n bits |
+|`x >> n`|x shifted right by n bits |
+|`~x` |the bits of x inverted |
+
 
 ## Functions
 ### Basic Function definition
