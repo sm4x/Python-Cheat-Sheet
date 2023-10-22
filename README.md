@@ -61,6 +61,25 @@ comment
 |or|Logical Or|
 |not|Logical Not|
 
+## Functions
+### Basic Function definition
+```{Python}
+def my_function(arg, *args, **kwargs):
+    print("Hello, world")
+    return None
+```
+
+
+### Lambda function
+A `lambda` function is a small anonymous function. It can have any number of arguments but only one expression.
+
+```{Python}
+lambda arguments : expression
+
+x = lambda a, b : a * b
+print(x(2, 3))
+```
+
 ## Object Oriented Programming
 ### Classes
 
