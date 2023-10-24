@@ -83,7 +83,7 @@ def my_function(arg, *args, **kwargs):
     print("Hello, world")
     return None
 ```
-
+`kwargs` will be passed as a dictionary.
 
 ### Lambda function
 A `lambda` function is a small anonymous function. It can have any number of arguments but only one expression.
