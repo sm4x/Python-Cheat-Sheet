@@ -105,8 +105,8 @@ class ClassName
     list_variable = []             # mistaken use of a class variable
 
 def __init__(self, name, **kwargs) -> None:  # Instantiation operation
-    self.name = name                         # instance variable unique to each instance
-    self.other = kwargs.get("passed")        # assigns keyword argument "passed" to self.other without error if not supplied
+    self.name = name            # instance variable unique to each instance
+    self.other = kwargs.get("passed")        # assigns keyword argument "passed" to self.other, if not supplied set to None
 ```
 ### Inheritance
 ```{python}
