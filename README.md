@@ -351,6 +351,15 @@ print(sys.argv)
 * The five log levels are: `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`.
 * You can also log to a file instead of the screen with the filename keyword argument in the `logging.basicConfig()` function.
 
+## tkinter
+
+| Control Variable|Function|
+|:----------|------------------------------------|
+|`StringVar`| Used to store strings of any length|
+|`IntVar`| Used to store integers|
+|`DoubleVar`| Used to store floating-point values|
+|`BooleanVar`| Used to store Boolean (True/False) values|
+
 ## Modules
 
 
