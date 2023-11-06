@@ -368,6 +368,12 @@ print(sys.argv)
 * groove
 * ridge
 
+### `pack` options
+
+* `fill`: This option will determine whether the widgets can increase or grow in size or not. By default, it is `NONE`. If we want to fill vertically, then it is `Y`. If horizontally, then it is `X`. If required both horizontally or vertically, then `BOTH`.
+* `expand`: This option will expand the widget to fill any space when set to `true` or `1`. When the window is resized, the widget will expand.
+* `side`: This option will decide the widget alignment, that is, against which side of the parent widget packs. By default, it is `TOP`. The others are `BOTTOM`, `LEFT`, or `RIGHT`.
+
 ## Modules
 
 
