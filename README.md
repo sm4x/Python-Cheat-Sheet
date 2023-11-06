@@ -360,6 +360,14 @@ print(sys.argv)
 |`DoubleVar`| Used to store floating-point values|
 |`BooleanVar`| Used to store Boolean values|
 
+### relief styles
+
+* flat
+* raised
+* sunken
+* groove
+* ridge
+
 ## Modules
 
 
